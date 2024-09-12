@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3f024c;
+  height: 100vh; /* Garantir que o corpo ocupe toda a altura da tela */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #8d4e8b;
+  padding: 10px 20px;
+  position: fixed; /* Fixar o cabeçalho no topo */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ocupar a altura total da viewport */
+  width: 100%;
+  margin-top: 60px; /* Compensar a altura do cabeçalho */
+}
+
+.card {
+  background-color: #dbb3d1;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  max-width: 600px;
+  width: 80%;
+}
+
+.congratulations h1 {
+  color: #8d4e8b;
+  font-size: 2rem;
+}
+
+.welcome-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.welcome-back h2 {
+  color: #8d4e8b;
+  margin-bottom: 20px;
+}
+
+.welcome-back p {
+  color: #333;
+  font-size: 1.2rem;
+}
+
+strong {
+  color: #8d4e8b;
+}
