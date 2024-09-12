@@ -1,0 +1,81 @@
+body {
+  background: linear-gradient(to bottom, #3a0066, #1b0033); /* Degradê roxo */
+  color: white; /* Cor do texto branco */
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7a4388;
+  padding: 0px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.receitas {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.categorias-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.categoria {
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  margin-bottom: 30px; /* Adiciona mais espaçamento entre os blocos */
+}
+
+.categoria h3 {
+  color: #d19fe8; /* Cor do título em roxo claro */
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.categoria ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categoria ul li {
+  margin: 10px 0; /* Espaçamento entre os itens */
+}
+
+.categoria ul li a {
+  text-decoration: none;
+  color: white; /* Link com cor branca */
+}
+
+.categoria ul li a:hover {
+  color: #d19fe8; /* Link ao passar o mouse fica em roxo claro */
+}
