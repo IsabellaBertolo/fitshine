@@ -1,0 +1,163 @@
+/* src/index.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(#5C1374, #2b0837);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  }
+  header {
+    height: 12vh;
+    background-color: #9d36a6d4;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+header img {
+    height: 80%;
+    object-fit: contain;
+}
+nav {
+    margin-left: auto; /* Empurra o nav para a direita */
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    position: relative; /* Para posicionar o menu suspenso */
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px; /* Ajuste o tamanho da fonte */
+    font-weight: 300; /* Fonte mais fina */
+    padding: 10px;
+    display: block;
+}
+nav ul li a:hover {
+    color: #e0e0e0;
+    background-color: rgba(255, 255, 255, 0.2); /* Adiciona um fundo sutil no hover */
+    border-radius: 4px;
+}
+/* Estilo do menu suspenso */
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #9d36a6d4;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    list-style: none;
+    padding: 10px;
+    border-radius: 4px;
+    width: max-content; /* Ajusta a largura do menu suspenso */
+}
+.dropdown-content li {
+    margin: 0;
+}
+.dropdown-content li a {
+    display: block;
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
+}
+.dropdown-content li a:hover {
+    background-color: #7a2a74;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    background-color: #9d36a6d4;
+}
+main {
+    flex: 1; /* Faz com que o main ocupe o espaço restante disponível */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Adiciona algum espaçamento interno */
+}
+.carousel {
+    position: relative;
+    width: 100%; /* Ajuste para ocupar a largura disponível */
+    max-width: 800px; /* Ajuste para o tamanho máximo desejado */
+    overflow: hidden;
+    border-radius: 10px;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel img {
+    width: 100%;
+    display: block;
+}
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    transform: translateY(-50%);
+}
+.carousel-control.prev {
+    left: 10px;
+}
+.carousel-control.next {
+    right: 10px;
+}
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; /* Ajuste para o tamanho máximo desejado */
+    margin-top: 20px;
+}
+.info-item {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto verticalmente */
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1000px; /* Ajuste para o tamanho máximo desejado */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+.info-item img {
+    width: 300px; /* Aumente o tamanho das imagens */
+    height: auto;
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+    border-radius: 5px;
+}
+.info-item h2 {
+    color: white;
+    font-size: 24px; /* Ajuste o tamanho da fonte */
+    font-weight: 700; /* Fonte mais grossa */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+}
+.info-item p {
+    color: white;
+    font-size: 18px; /* Ajuste o tamanho da fonte */
+    max-width: 600px; /* Ajuste para o tamanho máximo do texto */
+    margin: 0; /* Remove a margem do parágrafo */
+}
